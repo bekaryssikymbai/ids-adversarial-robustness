@@ -1,0 +1,64 @@
+# Experiment Configuration
+
+project:
+  name: "ids-adversarial-robustness"
+  version: "1.0.0"
+  seed: 42
+
+data:
+  dataset: "CIC-IDS2017"
+  raw_path: "data/raw/cic-ids2017.csv"
+  sample_path: "data/sample/sample.csv"
+  test_size: 0.15
+  val_size: 0.15
+  target_column: "Label"
+  drop_columns:
+    - "Flow ID"
+    - "Source IP"
+    - "Destination IP"
+    - "Timestamp"
+
+preprocessing:
+  normalization: "minmax"
+  encoding: "onehot"
+  handle_missing: "drop"
+
+models:
+  xgboost:
+    n_estimators: 100
+    max_depth: 6
+    learning_rate: 0.1
+    random_state: 42
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+    random_state: 42
+
+surrogate:
+  model: "logistic_regression"
+  max_iter: 1000
+  random_state: 42
+
+attacks:
+  fgsm:
+    epsilon: [0.01, 0.05, 0.1, 0.2]
+  pgd:
+    epsilon: [0.01, 0.05, 0.1, 0.2]
+    alpha: 0.01
+    num_iter: 10
+
+metrics:
+  primary: "f1_score"
+  secondary:
+    - "accuracy"
+    - "precision"
+    - "recall"
+  guardrail:
+    cpu_max: 80
+    latency_max_ms: 100
+    memory_max_gb: 4
+
+output:
+  results_dir: "results/"
+  figures_dir: "results/figures/"
+  log_dir: "logs/"
