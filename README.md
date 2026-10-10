@@ -31,36 +31,5 @@ ids-adversarial-robustness/
 ├── config.yaml # Experiment configuration
 └── LICENSE
 
-## Quickstart Guide
 
-### 1. Clone repository
-```bash
-git clone https://github.com/bekaryssikymbay/ids-adversarial-robustness.git
-cd ids-adversarial-robustness
-
-2. Create environment
-bash
-conda env create -f environment.yml
-conda activate ids-adversarial
-
-3. Run benchmark on sample data
-python src/benchmark.py --config config.yaml --sample
-
-4. Expected output
-results/sample_benchmark.csv
-
-Planned Benchmarks
-Experiment	Model	Attack	ε	Metric
-Baseline	XGBoost	None	—	F1, Accuracy
-Baseline	Random Forest	None	—	F1, Accuracy
-Attack 1	XGBoost	FGSM	0.01–0.2	ΔF1, ΔAccuracy
-Attack 2	XGBoost	PGD	0.01–0.2	ΔF1, ΔAccuracy
-Attack 3	Random Forest	FGSM	0.01–0.2	ΔF1, ΔAccuracy
-Attack 4	Random Forest	PGD	0.01–0.2	ΔF1, ΔAccuracy
-
-Citation
-Sikymbay, B. (2026). Robustness of Tree-Based ML Models for Network Intrusion Detection under Gradient-Based Adversarial Attacks. GitHub Repository.
-
-License
-MIT License — see LICENSE file.
 
