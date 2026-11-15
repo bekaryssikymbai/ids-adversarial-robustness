@@ -76,8 +76,8 @@ MIT License — see LICENSE file.
 | Random Forest | 0.2 | 0.65 | 15.3 |
 
 ### Scientific Plots
-![Attack Impact](reports/figures/fig1_attack_impact.png)
-![Latency](reports/figures/fig2_latency_distribution.png)
+![Attack Impact](fig1_attack_impact.png)
+![Latency](fig2_latency_distribution.png)
 
 ## Domain Model
 See [Domain Model](docs/domain_model.md) for the mathematical formulation.
