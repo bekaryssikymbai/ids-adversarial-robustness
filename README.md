@@ -78,7 +78,7 @@ MIT License — see LICENSE file.
 ### Scientific Plots
 ![Attack Impact](reports/figures/fig1_attack_impact.png)
 [![Latency](reports/figures/fig2_latency_distribution.png)](https://github.com/bekaryssikymbai/ids-adversarial-robustness/blob/main/reports/figures/fig2_latency_distribution.png)
-<img width="2400" height="1500" alt="image" src="https://github.com/user-attachments/assets/75f09fdc-ad1a-4cdb-a3e5-a6d30722d7e3" />
+
 
 
 ## Domain Model
