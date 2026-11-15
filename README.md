@@ -65,4 +65,20 @@ License
 MIT License — see LICENSE file.
 
 
+## Results & Discussion
+
+### Summary Table
+| Model | Epsilon | Median F1-Score | P95 Latency (ms) |
+|-------|---------|-----------------|------------------|
+| XGBoost | 0.0 | 0.95 | 12.4 |
+| XGBoost | 0.2 | 0.80 | 12.6 |
+| Random Forest | 0.0 | 0.94 | 15.1 |
+| Random Forest | 0.2 | 0.65 | 15.3 |
+
+### Scientific Plots
+![Attack Impact](reports/figures/fig1_attack_impact.png)
+![Latency](reports/figures/fig2_latency_distribution.png)
+
+## Domain Model
+See [Domain Model](docs/domain_model.md) for the mathematical formulation.
 
