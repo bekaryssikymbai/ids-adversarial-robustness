@@ -1,7 +1,7 @@
 # Robustness of Tree-Based ML Models for Network Intrusion Detection under Gradient-Based Adversarial Attacks
 
 ## Authors
-- Bekarys Sikymbay
+- Bekarys Sikymbai
 
 ## Research Question
 How do gradient-based adversarial attacks (FGSM, PGD) affect the robustness of tree-based ensemble models (XGBoost, Random Forest) in network intrusion detection, and which model is more resilient?
